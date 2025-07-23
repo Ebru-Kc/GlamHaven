@@ -1,0 +1,41 @@
+﻿@model IEnumerable<GlamHaven.Models.entity.Hakkimizdas>
+@{
+    ViewBag.Title = "Hakkımızda";
+    Layout = "~/Views/Shared/_GlamLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+
+    @foreach (var item in Model)
+    {
+        <div id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="titlepage">
+                            <h2> <img src="~/GlamHaven/images/head.h.png" alt="#" />Hakkımızda</h2>
+                            <p>Glam Haven geniş yelpazeli hizmetleri ile karşınızda. Tüm İstanbul'a bakım hizmeti sunan güzellik merkezimiz, her geçen gün büyüyüp genişliyor. Kendini sürekli olarak büyüyen ve geliştiren firmamız, deneyimli ve atılgan çalışan kadrosu ile harikalar yaratmaya devam ediyor. Günümüzde kendi bakımımızı kendimiz yapamıyor ve buna zaten zaman ayıramıyoruz. Ancak deneyimli ve kaliteli hizmet sunmakta olan firmalar bu yönlü ihtiyacımıza cevap olabilmektedirler. Güzellik ve bakım oldukça önemli bir şeydir ve kesinlikle aksatılmamalıdır.  </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+
+
+
+
+</body>
+</html>
+
+

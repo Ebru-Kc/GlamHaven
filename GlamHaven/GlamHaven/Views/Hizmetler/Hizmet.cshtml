@@ -1,0 +1,59 @@
+﻿@model IEnumerable<GlamHaven.Models.entity.Hizmetlers>
+
+@{
+    ViewBag.Title = "Hizmetlerimiz";
+    Layout = "~/Views/Shared/_GlamLayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+s
+<body>
+
+           @foreach (var item in Model)
+            {
+                   <div id="service" class="service">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <div class="titlepage">
+                                       <h2> <img src="~/GlamHaven/images/head.png" alt="#" />Hizmetlerimiz</h2>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <div id="hover_chang" class="service_box">
+                                       <i><img src="~/GlamHaven/images/thr.png" alt="#" /></i>
+                                       <h3>Cosmetic</h3>
+                                       <p>saç bakımı, saç boyası, cilt bakımı, kaş yüz alımı ,profesyonel makyaj, tüm vücut ağda ve yüz masajı gibi birçok hizmet ile karşınızda. </p>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div id="hover_chang" class="service_box">
+                                       <i><img src="~/GlamHaven/images/thr1.png" alt="#" /></i>
+                                       <h3>Nails</h3>
+                                       <p>Nail art dünyasında öncü ve yenilikçi bir marka olarak tanınmak, müşterilerimize en yüksek hijyen ve kalite standartlarında hizmet sunmaktır. </p>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div id="hover_chang" class="service_box">
+                                       <i><img src="~/GlamHaven/images/thr2.png" alt="#" /></i>
+                                       <h3>hairdressing</h3>
+                                       <p> saç şekilleri, saç kesimi ve fönü, cilt bakımı, kaş yüz alımı, altın oran kaş tasarımı, gelin başı ve makyajı, türban yapımı  gibi birçok hizmet ile karşınızda.  </p>
+                                   </div>
+                               </div>
+
+                           </div>
+                       </div>
+                   </div>
+            }
+
+
+</body>
+
+</html>
+
